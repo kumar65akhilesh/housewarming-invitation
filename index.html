@@ -5,24 +5,75 @@
     <title>Housewarming Invitation</title>
     <style>
         html{
-            align-items: center;
-
-            text-align: center;
-            background-color: aliceblue;
+            
             padding:10%;
             padding-top: 0%;
+            background-color:#F9EFDB;
         }
         h1{
             font-family: Arial, Helvetica, sans-serif;
             color: brown;
             font-weight: 900;
-            font-size:xx-large;
+            font-size:50px;
             
 
         }
         h2{
             color:rgb(21, 86, 102);
+            text-align: left;
         }
+        #middle{
+            text-align: center;
+            font-size: 30px;;
+        }
+         .inln{
+            display:inline-block;
+            width:45%; 
+            margin-left: 20px;;
+            text-align:right;
+            color: rgb(21, 86, 102);
+        }
+        
+        .light{
+            font-weight: lighter;
+            width:45%;
+            text-align:left
+        } 
+        a{
+            font-size: x-large;
+            margin-left: 20px;;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:75%;
+           
+        }
+        h1{
+            text-align: center;
+        }
+        .maincontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: auto;
+            /* background-color: #f2f2f2; */
+            background-color: #EBD9B4;
+            
+            border-radius: 10px;;
+            
+            flex-shrink: 1;
+            min-width: 500px;
+            
+        }
+        .maincontainer > div {
+            width:100%;
+            
+        }
+        
+        
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +81,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 >Satyanarayan Katha</h1>
+    <div >
+    <h1 >God Satyanarayan Katha</h1>
     <hr/>   
-    
+    <div class="x">
     <img src="./public/satyanarayan.JPG"/>
-    <h2>Akhilesh & Priya invite you to their housewarming</h2>
-    <h2>Date: TBD</h2>
-    <h2>Venue: 609 Becklow St,Debary, FL</h2>
-    <a href="https://www.google.com/maps/place/609+Becklow+St,+DeBary,+FL+32713/@28.8558134,-81.3365537,17z/data=!3m1!4b1!4m6!3m5!1s0x88e71203dd8fc4f1:0x3f76af45b5cab2a3!8m2!3d28.8558087!4d-81.3339788!16s%2Fg%2F11ksnwd1sl?entry=ttu">Google Map Link</a>
-    <a href="./public/contact.html">Contact</a>
+    </div>
     
+    
+    <h2 id="middle">Please join us for Satyanarayan Katha/housewarming. We would love if you join us for Pooja and blessings.</h2>
+    <div class="maincontainer">
+        <div ><h2 class="inln">Date:</h2> <h2 class="inln light"> 3rd March, 2024</h3></div>
+        <div ><h2 class="inln">Time:</h2> <h2 class="inln light"> Pooja starts at 10am.</h3></div>
+        <div> <h2 class="inln">Venue: </h2><h2 class="inln light"> 609 Becklow St, Debary, FL</h3></div>
+        <div><h2 class="inln">Dress Code: </h2><h2 class="inln light"> Indian</h3></div>
+        <div>
+            <h2 class="inln">Driving Directions: </h2>
+            <a href="https://www.google.com/maps/place/609+Becklow+St,+DeBary,+FL+32713/@28.8558134,-81.3365537,17z/data=!3m1!4b1!4m6!3m5!1s0x88e71203dd8fc4f1:0x3f76af45b5cab2a3!8m2!3d28.8558087!4d-81.3339788!16s%2Fg%2F11ksnwd1sl?entry=ttu">Google Map Link</a>    
+                
+        </div> 
+    </div>
+   
+</div>
 </body>
 </html>
